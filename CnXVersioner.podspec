@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CnXVersioner'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CnXVersioner.'
+  s.version          = '0.0.1'
+  s.summary          = 'Simple iOS App version manager for showing onboard view.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Simple iOS App version manager for showing onboard view.
+
+it initialized from AppDelegate and Save version info into UserDefaults.
+You can use for showing onboard view easily.
                        DESC
 
   s.homepage         = 'https://github.com/CenoX/CnXVersioner'
@@ -26,17 +29,11 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'CenoX' => 'dev@cenox.co' }
   s.source           = { :git => 'https://github.com/CenoX/CnXVersioner.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/CenoX_Kang'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '4.2'
 
-  s.source_files = 'CnXVersioner/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CnXVersioner' => ['CnXVersioner/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Versioner/Classes/**/*'
+  s.frameworks = 'UIKit'
 end
