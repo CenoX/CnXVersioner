@@ -1,0 +1,6 @@
+use_frameworks!
+target 'CnXVersioner_Tests' do
+  pod 'CnXVersioner', :path => '../'
+  
+  
+end
