@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CnXVersioner'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Simple iOS App version manager for showing onboard view.'
 
 # This description is used to generate tags and improve search results.
@@ -34,6 +34,6 @@ You can use for showing onboard view easily.
   s.ios.deployment_target = '12.0'
   s.swift_version = '4.2'
 
-  s.source_files = 'Versioner/Classes/**/*'
+  s.source_files = 'CnXVersioner/Classes/**/*'
   s.frameworks = 'UIKit'
 end
